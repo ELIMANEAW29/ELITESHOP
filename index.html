@@ -14,6 +14,7 @@
     
     <!-- Votre propre fichier CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script.js">
 </head>
 
 <body>
@@ -21,7 +22,10 @@
     <header class="bg-dark text-white">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">ELITESHOP</a>
+                <center>
+                    <img src="images/406011094_321401287391882_1035657521851144862_n.jpg" alt="logo" width="100px" height="100px" class="rounded-circle" style="position: absolute;">
+                </center>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,10 +41,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="panier.html">Panier</a>
+                        </li>
                     </ul>
                     <!-- Icônes du panier et du compte utilisateur -->
                     <div class="d-flex ms-3">
-                        <a href="#" class="text-white me-3"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="panier.html" class="text-white me-3"><i class="fas fa-shopping-cart"></i></a>
                         <a href="#" class="text-white"><i class="fas fa-user"></i></a>
                     </div>
                 </div>
@@ -55,30 +62,24 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                 <div class="col">
                     <div class="card shadow">
-
                         <img src="images/play5.jpeg" class="card-img-top" alt="Produit 1">
                         <div class="card-body">
                             <h5 class="card-title">Playstation 5</h5>
                             <p class="card-text">Plongez dans le futur univers du gaming avec la nouvelle PS5 standard ou la Playstation 5 Digital Edition d'un design à couper le souffle! Associées à la manette Dual Sense sans fil, le casque-micro Pulse 3D, et d'autres accessoires PS5, Sony a créé pour vous une sensation de gaming unique avec ses caractéristiques sophistiquées.</p>
-                            <a href="#" class="btn btn-dark">Acheter maintenant</a>
-
+                            <a href="#" class="btn btn-dark add-to-cart" data-product-id="1">Acheter maintenant</a>
                         </div>
                     </div>
                 </div>
-
-
                 <div class="col">
                     <div class="card shadow">
                         <img src="images/xbox.jpg" class="card-img-top" alt="Produit 2">
                         <div class="card-body">
                             <h5 class="card-title">Xbox serie X</h5>
                             <p class="card-text">La Xbox Series X est une console de jeu puissante qui m'impressionne par sa rapidité et ses performances graphiques.</p>
-                            <a href="#" class="btn btn-dark">Acheter maintenant</a>
+                            <a href="#" class="btn btn-dark add-to-cart" data-product-id="2">Acheter maintenant</a>
                         </div>
                     </div>
                 </div>
-
-
                 <div class="col">
                     <div class="card shadow">
                         <img src="images/switch.jpg" class="card-img-top" alt="Produit 3">
@@ -89,26 +90,23 @@
                                 C'est une nouvelle ère où vous ne devez plus adapter votre quotidien pour pouvoir jouer, c'est désormais votre console qui s'adapte à votre style de vie.
                                 
                                 Profitez de vos jeux où, quand et avec qui vous le souhaitez !</p>
-                            <a href="#" class="btn btn-dark">Acheter maintenant</a>
+                            <a href="#" class="btn btn-dark add-to-cart" data-product-id="3">Acheter maintenant</a>
                         </div>
                     </div>
                 </div>
-
-
                 <div class="col">
                     <div class="card shadow">
                         <img src="images/gamer.jpg" class="card-img-top" alt="Produit 4">
                         <div class="card-body">
                             <h5 class="card-title">PC portable Gaming MSI Pulse 16</h5>
                             <p class="card-text">Processeur Intel® Core™ Ultra 7 processeur 155H avec accélérateur d'intelligence artificielle (NPU) intégré.Carte graphique GeForce® de dernière génération pour des performances impressionnantes.Les modes GPU discret et Full Power GPU poussent les performances du GPU à leur niveau le plus haut.Technologie de refroidissement Cooler Boost 5 exclusive avec deux ventilateurs dédiés et cinq caloducs en cuivre.Libérez tout le potentiel de l’ordinateur grâce au support de la mémoire DDR5 dernière génération.</p>
-                            <a href="#" class="btn btn-dark">Acheter maintenant</a>
+                            <a href="#" class="btn btn-dark add-to-cart" data-product-id="4">Acheter maintenant</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <!-- Pied de page avec réseaux sociaux -->
     <footer class="bg-dark text-white text-center py-3">
@@ -125,6 +123,7 @@
 
     <!-- Scripts Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
